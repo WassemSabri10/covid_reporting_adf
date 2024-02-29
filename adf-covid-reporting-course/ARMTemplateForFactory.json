@@ -407,6 +407,9 @@
 				"schema": {
 					"type": "object",
 					"properties": {
+						"sourceBaseURL": {
+							"type": "string"
+						},
 						"sourceRelativeURL": {
 							"type": "string"
 						},
@@ -673,8 +676,7 @@
 						"frequency": "Day",
 						"interval": 1,
 						"startTime": "2024-02-29T14:35:00",
-						"timeZone": "Central Standard Time",
-						"schedule": {}
+						"timeZone": "Central Standard Time"
 					}
 				}
 			},
