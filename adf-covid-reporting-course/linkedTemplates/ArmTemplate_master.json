@@ -7,9 +7,25 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-covid-reporting-course"
 		},
+		"ls_ablob_covidreportingsa_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_ablob_covidreportingsa'"
+		},
+		"ls_adls_covidreportingdl_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_adls_covidreportingdl'"
+		},
+		"ls_adls_covidreportingdl_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://covidreportingdkstg.dfs.core.windows.net/"
+		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://github.com"
+		},
+		"tr_ingest_population_Data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/0501e465-cad9-433c-8a38-e6edfb12f847/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingstgcct"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +54,20 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_ablob_covidreportingsa_connectionString": {
+						"value": "[parameters('ls_ablob_covidreportingsa_connectionString')]"
+					},
+					"ls_adls_covidreportingdl_accountKey": {
+						"value": "[parameters('ls_adls_covidreportingdl_accountKey')]"
+					},
+					"ls_adls_covidreportingdl_properties_typeProperties_url": {
+						"value": "[parameters('ls_adls_covidreportingdl_properties_typeProperties_url')]"
+					},
 					"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
+					},
+					"tr_ingest_population_Data_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_Data_properties_typeProperties_scope')]"
 					}
 				}
 			},
