@@ -1,0 +1,9 @@
+{
+	"name": "adf-covid-reporting-course",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0ac8343e-21ba-4166-baf5-253dd9a22b59",
+		"tenantId": "cdb6d5b0-4a5a-4308-9821-9cc625398aa2"
+	}
+}
